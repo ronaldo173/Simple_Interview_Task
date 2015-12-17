@@ -3,7 +3,7 @@ import java.util.List;
 /**
  * Created by Alex on 17.12.2015.
  */
-public class Account implements ClientService {
+public class Account {
     private Client client;
     private double balance;
 
@@ -20,11 +20,15 @@ public class Account implements ClientService {
         this.balance = balance;
     }
 
-    public double getClientBalance(Client client, List<Account> accounts) {
-        return 0;
+    public Client getClient() {
+        return client;
     }
 
-    public Client getClientWithMaxBalance(List<Account> accounts) {
-        return null;
+    @Override
+    public String toString() {
+        return "Account{" +
+                "client=" + client +
+                ", balance=" + balance +
+                '}';
     }
 }
