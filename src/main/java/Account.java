@@ -1,5 +1,3 @@
-import java.util.List;
-
 /**
  * Created by Alex on 17.12.2015.
  */
@@ -29,6 +27,6 @@ public class Account {
         return "Account{" +
                 "client=" + client +
                 ", balance=" + balance +
-                '}';
+                '}' + "\n";
     }
 }
